@@ -1,0 +1,35 @@
+{
+  "default":"en",
+  "en":{
+    "appName":"Empty Battery Alarm",
+	"batte1":"Battery 1 Settings",
+	"batte2":"Battery 2 Settings",
+	"batte3":"Battery 3 Settings",
+	"sysWarn1":"Low Voltage Battery 1",
+	"sysWarn2":"Low Voltage Battery 2",
+	"sysWarn3":"Low Voltage Battery 3",
+	"sensorSelect":"Sensor",
+	"selTime":"Announcement Time (s)",
+	"alarmThr":"Alarm Value (V)",
+	"selAudio":"Audiofile",
+	"rpt":"Repeat Voice (3x)",
+	"neg":"No",
+	"pos":"Yes"
+  },
+  "de":{
+    "appName":"Leere Batteriealarm",
+	"batte1":"Batterie 1 Einstellungen",
+	"batte2":"Batterie 2 Einstellungen",
+	"batte3":"Batterie 3 Einstellungen",
+	"sysWarn1":"Niederspannung Batterie 1",
+	"sysWarn2":"Niederspannung Batterie 2",
+	"sysWarn3":"Niederspannung Batterie 3",
+	"sensorSelect":"Sensor",
+	"selTime":"Ankündigung Zeit (s)",
+	"alarmThr":"Alarmwert (V)",
+	"selAudio":"Audiodatei",
+	"rpt":"Nachricht wiederholen (3x)",
+	"neg":"Nein",
+	"pos":"Ja"
+  }
+}
