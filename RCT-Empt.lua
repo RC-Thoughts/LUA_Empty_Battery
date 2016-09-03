@@ -24,12 +24,6 @@ local vFile1Played, vFile2Played, vFile3Played
 local sensoLalist1 = {"..."}
 local sensoIdlist1 = {"..."}
 local sensoPalist1 = {"..."}
-local sensoLalist2 = {"..."}
-local sensoIdlist2 = {"..."}
-local sensoPalist2 = {"..."}
-local sensoLalist3 = {"..."}
-local sensoIdlist3 = {"..."}
-local sensoPalist3 = {"..."}
 local repeatlist = {}
 ----------------------------------------------------------------------
 -- Function for translation file-reading
@@ -201,7 +195,7 @@ local function initForm()
 	
 	form.addRow(2)
 	form.addLabel({label=trans3.alarmThr})
-	form.addIntbox(string.format("%.2f",alarm1),0,1000,0,1,1,alarm1Changed)
+	form.addIntbox(string.format("%.1f",alarm1),0,1000,0,1,1,alarm1Changed)
 	
 	form.addRow(2)
 	form.addLabel({label=trans3.selAudio})
@@ -225,7 +219,7 @@ local function initForm()
 	
 	form.addRow(2)
 	form.addLabel({label=trans3.alarmThr})
-	form.addIntbox(string.format("%.2f",alarm2),0,1000,0,1,1,alarm2Changed)
+	form.addIntbox(string.format("%.1f",alarm2),0,1000,0,1,1,alarm2Changed)
 	
 	form.addRow(2)
 	form.addLabel({label=trans3.selAudio})
@@ -298,7 +292,6 @@ local function loop()
 		vFile1played = 0
 		tInit1 = 0
 	end
-	
 	--- Battery 2
 	local sense2 = system.getSensorByID(sid2, sparam2)
 	if(sense2 and sense2.valid) then
