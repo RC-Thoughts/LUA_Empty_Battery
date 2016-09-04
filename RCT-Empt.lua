@@ -254,7 +254,7 @@ local function initForm()
 	form.addSelectbox(repeatlist,repeat3,false,repeat3Changed)
 	
 	form.addRow(1)
-	form.addLabel({label="Powered by RC-Thoughts.com",font=FONT_MINI, alignRight=true})
+	form.addLabel({label="Powered by RC-Thoughts.com - v."..emptVersion.." ",font=FONT_MINI, alignRight=true})
 end
 ----------------------------------------------------------------------
 -- Runtime functions
@@ -394,5 +394,6 @@ local function init()
 	table.insert(repeatlist,trans3.pos)
 end
 ----------------------------------------------------------------------
+emptVersion = "1.0"
 setLanguage()
-return {init=init, loop=loop, author="RC-Thoughts", version="1.0", name=trans3.appName}
+return {init=init, loop=loop, author="RC-Thoughts", version=emptVersion, name=trans3.appName}
