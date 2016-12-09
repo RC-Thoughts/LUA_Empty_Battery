@@ -31,5 +31,21 @@
 	"rpt":"Nachricht wiederholen (3x)",
 	"neg":"Nein",
 	"pos":"Ja"
+  } ,
+  "es":{
+    "appName":"Alarma Batería Vacía",
+	"batte1":"Config. Batería 1",
+	"batte2":"Config. Batería 2",
+	"batte3":"Config. Batería 3",
+	"sysWarn1":"Voltaje Bajo Batería 1",
+	"sysWarn2":"Voltaje Bajo Batería 2",
+	"sysWarn3":"Voltaje Bajo Batería 3",
+	"sensorSelect":"Sensor",
+	"selTime":"Tiempo de aviso (s)",
+	"alarmThr":"Valor de alarma (V)",
+	"selAudio":"Archivo de Audio",
+	"rpt":"Repetir voz (3x)",
+	"neg":"No",
+	"pos":"Sí"
   }
 }
