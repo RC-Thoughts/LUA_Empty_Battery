@@ -7,6 +7,8 @@
 	and audio-file to be played if battery is empty.
 	
 	Localisation-file has to be as /Apps/Lang/RCT-Empt.jsn
+	
+	Spanish translation courtesy from César Casado
 	---------------------------------------------------------
 	Empty Battery Alarm is a part of RC-Thoughts Jeti Tools.
 	---------------------------------------------------------
@@ -394,6 +396,6 @@ local function init()
 	table.insert(repeatlist,trans3.pos)
 end
 ----------------------------------------------------------------------
-emptVersion = "1.0"
+emptVersion = "1.1"
 setLanguage()
 return {init=init, loop=loop, author="RC-Thoughts", version=emptVersion, name=trans3.appName}
