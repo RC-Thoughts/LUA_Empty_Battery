@@ -9,6 +9,7 @@
 	Localisation-file has to be as /Apps/Lang/RCT-Empt.jsn
 	
 	Spanish translation courtesy from César Casado
+	Italian translation courtesy from Fabrizio Zaini
 	---------------------------------------------------------
 	Empty Battery Alarm is a part of RC-Thoughts Jeti Tools.
 	---------------------------------------------------------
@@ -396,6 +397,6 @@ local function init()
 	table.insert(repeatlist,trans3.pos)
 end
 ----------------------------------------------------------------------
-emptVersion = "1.1"
+emptVersion = "1.2"
 setLanguage()
 return {init=init, loop=loop, author="RC-Thoughts", version=emptVersion, name=trans3.appName}

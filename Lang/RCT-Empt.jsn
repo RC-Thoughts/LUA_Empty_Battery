@@ -31,7 +31,7 @@
 	"rpt":"Nachricht wiederholen (3x)",
 	"neg":"Nein",
 	"pos":"Ja"
-  } ,
+  },
   "es":{
     "appName":"Alarma Batería Vacía",
 	"batte1":"Config. Batería 1",
@@ -47,5 +47,21 @@
 	"rpt":"Repetir voz (3x)",
 	"neg":"No",
 	"pos":"Sí"
+  },
+  “it":{
+	"appName”:”Allarme batteria scarica",
+	"batte1”:”Impostazione Batteria 1",
+	"batte2":"Impostazione Batteria 2",
+	"batte3":"Impostazione Batteria 3",
+	"sysWarn1":"Batteria 1 tensione bassa",
+	"sysWarn2":"Batteria 2 tensione bassa",
+	"sysWarn3":"Batteria 3 tensione bassa",
+	"sensorSelect":"Sensore",
+	"selTime":”Annuncio Time (s)",
+	"alarmThr”:”Valore allarme (V)",
+	"selAudio":"Audiofile",
+	"rpt”:"Ripeti Voice (3x)",
+	"neg":"No",
+	"pos”:"Sì"
   }
 }
