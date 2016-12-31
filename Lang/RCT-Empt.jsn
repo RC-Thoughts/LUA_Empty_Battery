@@ -49,19 +49,19 @@
 	"pos":"Sí"
   },
   “it":{
-	"appName”:”Allarme batteria scarica",
-	"batte1”:”Impostazione Batteria 1",
+	"appName":"Allarme batteria scarica",
+	"batte1":"Impostazione Batteria 1",
 	"batte2":"Impostazione Batteria 2",
 	"batte3":"Impostazione Batteria 3",
 	"sysWarn1":"Batteria 1 tensione bassa",
 	"sysWarn2":"Batteria 2 tensione bassa",
 	"sysWarn3":"Batteria 3 tensione bassa",
 	"sensorSelect":"Sensore",
-	"selTime":”Annuncio Time (s)",
-	"alarmThr”:”Valore allarme (V)",
+	"selTime":"Annuncio Time (s)",
+	"alarmThr":"Valore allarme (V)",
 	"selAudio":"Audiofile",
-	"rpt”:"Ripeti Voice (3x)",
+	"rpt":"Ripeti Voice (3x)",
 	"neg":"No",
-	"pos”:"Sì"
+	"pos":"Sì"
   }
 }
