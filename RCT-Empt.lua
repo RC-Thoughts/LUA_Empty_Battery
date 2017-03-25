@@ -16,6 +16,7 @@
 	Released under MIT-license by Tero @ RC-Thoughts.com 2016
 	---------------------------------------------------------
 --]]
+collectgarbage()
 ----------------------------------------------------------------------
 -- Locals for the application
 local senso1, senso2, senso3, time1, time2, time3 
@@ -29,32 +30,14 @@ local sensoIdlist1 = {"..."}
 local sensoPalist1 = {"..."}
 local repeatlist = {}
 ----------------------------------------------------------------------
--- Function for translation file-reading
-local function readFile(path) 
-	local f = io.open(path,"r")
-	local lines={}
-	if(f) then
-		while 1 do 
-			local buf=io.read(f,512)
-			if(buf ~= "")then 
-				lines[#lines+1] = buf
-				else
-				break   
-			end   
-		end 
-		io.close(f)
-		return table.concat(lines,"") 
-	end
-end 
---------------------------------------------------------------------------------
 -- Read translations
-local function setLanguage()	
-	local lng=system.getLocale();
-	local file = readFile("Apps/Lang/RCT-Empt.jsn")
-	local obj = json.decode(file)  
-	if(obj) then
-		trans3 = obj[lng] or obj[obj.default]
-	end
+local function setLanguage()
+    local lng=system.getLocale()
+    local file = io.readall("Apps/Lang/RCT-Empt.jsn")
+    local obj = json.decode(file)
+    if(obj) then
+        trans3 = obj[lng] or obj[obj.default]
+    end
 end
 --------------------------------------------------------------------------------
 -- Read available sensors for user to select
@@ -258,6 +241,7 @@ local function initForm()
 	
 	form.addRow(1)
 	form.addLabel({label="Powered by RC-Thoughts.com - v."..emptVersion.." ",font=FONT_MINI, alignRight=true})
+    collectgarbage()
 end
 ----------------------------------------------------------------------
 -- Runtime functions
@@ -361,6 +345,7 @@ local function loop()
 		vFile3played = 0
 		tInit3 = 0
 	end
+    collectgarbage()
 end
 ----------------------------------------------------------------------
 -- Application initialization
@@ -395,8 +380,10 @@ local function init()
 	repeat3 = system.pLoad("repeat3",1)
 	table.insert(repeatlist,trans3.neg)
 	table.insert(repeatlist,trans3.pos)
+    collectgarbage()
 end
 ----------------------------------------------------------------------
-emptVersion = "1.2"
+emptVersion = "1.3"
 setLanguage()
+collectgarbage()
 return {init=init, loop=loop, author="RC-Thoughts", version=emptVersion, name=trans3.appName}
