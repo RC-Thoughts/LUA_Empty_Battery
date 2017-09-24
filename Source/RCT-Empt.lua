@@ -257,7 +257,7 @@ local function loop()
 			tPlay1 = (tInit1 + time1)
 		end
 		if (tStart1 <= tCurrent and tStop1 >= tCurrent) then
-			if(sense1.value <= alarm1) then
+			if(sense1.value <= (alarm1 / 10)) then
 				if(tCurrent >= tPlay1 and vFile1played ~= 1) then
 					if (repeat1 == 2) then
 						system.messageBox(trans3.sysWarn1,5)
@@ -290,7 +290,7 @@ local function loop()
 			tPlay2 = (tInit2 + time2)
 		end
 		if (tStart2 <= tCurrent and tStop2 >= tCurrent) then
-			if(sense2.value <= alarm2) then
+			if(sense2.value <= (alarm2 / 10)) then
 				if(tCurrent >= tPlay2 and vFile2played ~= 1) then
 					if (repeat2 == 2) then
 						system.messageBox(trans3.sysWarn2,5)
@@ -323,7 +323,7 @@ local function loop()
 			tPlay3 = (tInit3 + time3)
 		end
 		if (tStart3 <= tCurrent and tStop3 >= tCurrent) then
-			if(sense3.value <= alarm3) then
+			if(sense3.value <= (alarm3 / 10)) then
 				if(tCurrent >= tPlay3 and vFile3played ~= 1) then
 					if (repeat3 == 2) then
 						system.messageBox(trans3.sysWarn3,5)
@@ -383,7 +383,7 @@ local function init()
     collectgarbage()
 end
 ----------------------------------------------------------------------
-emptVersion = "1.3"
+emptVersion = "1.4"
 setLanguage()
 collectgarbage()
 return {init=init, loop=loop, author="RC-Thoughts", version=emptVersion, name=trans3.appName}
